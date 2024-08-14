@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A3-Exercise 1</title>
+    <style>
+        /* Basic styling for the body to center content and add background color */
+        body {
+            font-family: Arial, sans-serif; /* Sets the font for the entire document */
+            background-color: #f5f5f5; /* Light gray background color */
+            color: #333; /* Dark gray text color for readability */
+            margin: 0; /* Removes default margin */
+            padding: 20px; /* Adds padding around the content */
+            display: flex; /* Uses flexbox for layout */
+            justify-content: center; /* Centers content horizontally */
+            align-items: center; /* Centers content vertically */
+            flex-direction: column; /* Stacks items vertically */
+            min-height: 100vh; /* Ensures the content covers the full viewport height */
+        }
+
+        /* Styling for the main heading */
+        h1 {
+            color: #00695c; /* Teal color for the heading */
+            margin-bottom: 20px; /* Space below the heading */
+            font-size: 28px; /* Font size for the heading */
+        }
+
+        /* Styling for the section headings */
+        h2 {
+            color: #00796b; /* Slightly different teal color */
+            margin-top: 20px; /* Space above each section heading */
+            font-size: 22px; /* Font size for section headings */
+        }
+
+        /* Styling for forms to create a card-like appearance */
+        form {
+            margin-bottom: 20px; /* Space below each form */
+            width: 100%; /* Ensures form takes full available width */
+            max-width: 400px; /* Limits maximum width of forms */
+            padding: 10px; /* Padding inside the form */
+            background-color: #ffffff; /* White background for forms */
+            border-radius: 5px; /* Rounded corners for the form */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+
+        /* Styling for labels inside forms */
+        label {
+            font-weight: bold; /* Bold text for labels */
+            display: block; /* Labels take full width */
+            margin-bottom: 5px; /* Space below labels */
+        }
+
+        /* Styling for text inputs inside forms */
+        input[type="text"] {
+            width: calc(100% - 12px); /* Full width minus padding */
+            padding: 8px; /* Padding inside input fields */
+            margin-bottom: 10px; /* Space below input fields */
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 4px; /* Rounded corners for input fields */
+        }
+
+        /* Styling for buttons inside forms */
+        button {
+            background-color: #00796b; /* Teal background for buttons */
+            color: white; /* White text color for buttons */
+            border: none; /* No border */
+            padding: 10px 15px; /* Padding inside buttons */
+            border-radius: 4px; /* Rounded corners for buttons */
+            cursor: pointer; /* Pointer cursor on hover */
+            font-size: 16px; /* Font size for buttons */
+        }
+
+        /* Hover effect for buttons */
+        button:hover {
+            background-color: #00695c; /* Darker teal on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Marquee for scrolling heading -->
+    <marquee>
+        <h1>Exercise 1</h1>
+    </marquee>
+
+    <!-- Form to find summation -->
+    <form action="/findSummation" method="get">
+        <h2>Find Summation</h2>
+        <label for="number">Enter a number:</label>
+        <input type="text" id="number" name="number">
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Form to convert the first and last letters to uppercase -->
+    <form action="/uppercaseFirstandLast" method="get">
+        <h2>Uppercase First and Last</h2>
+        <label for="string">Enter a string:</label>
+        <input type="text" id="string" name="string">
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Form to find average and median of an array -->
+    <form action="/findAverageAndMedian" method="get">
+        <h2>Find Average and Median</h2>
+        <label for="array">Enter an array (e.g., [1,2,3]):</label>
+        <input type="text" id="array" name="array">
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Form to find 4-digit numbers in a string -->
+    <form action="/find4Digits" method="get">
+        <h2>Find 4-Digit Number</h2>
+        <label for="string">Enter a string of numbers:</label>
+        <input type="text" id="string" name="string">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
